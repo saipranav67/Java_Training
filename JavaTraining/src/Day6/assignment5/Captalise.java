@@ -20,9 +20,8 @@ public class Captalise {
 
         for (String word : words) {
             if (!word.isEmpty()) {
-                capitalizedSentence.append(Character.toUpperCase(word.charAt(0))) // Capitalize first letter
-                        .append(word.substring(1).toLowerCase()).append(" "); // Keep the rest lowercase
-            }
+                capitalizedSentence.append(Character.toUpperCase(word.charAt(0))) 
+                        .append(word.substring(1).toLowerCase()).append(" ");             }
         }
 
         return capitalizedSentence.toString().trim(); // Trim to remove trailing space
