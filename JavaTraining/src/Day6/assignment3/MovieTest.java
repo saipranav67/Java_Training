@@ -11,17 +11,14 @@ public class MovieTest {
         System.out.println("Original Movie List:");
         movies.forEach(System.out::println);
 
-        // Sort by Language
         movieService.sortByLanguage(movies);
         System.out.println("\nMovies Sorted by Language:");
         movies.forEach(System.out::println);
 
-        // Sort by Director
         movieService.sortByDirector(movies);
         System.out.println("\nMovies Sorted by Director:");
         movies.forEach(System.out::println);
 
-        // Sort by Duration
         movieService.sortByDuration(movies);
         System.out.println("\nMovies Sorted by Duration:");
         movies.forEach(System.out::println);
