@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class LargestDiff {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt(); // Read number of elements
+        int n = scanner.nextInt(); 
         int[] arr = new int[n];
 
         // Read array elements
@@ -20,7 +20,7 @@ public class LargestDiff {
 
     public static int findMaxDistance(int[] arr, int n) {
         if (n < 2) {
-            return -1; // Not enough elements to find a difference
+            return -1; 
         }
 
         int maxDiff = 0;
@@ -31,7 +31,7 @@ public class LargestDiff {
 
             if (diff > maxDiff) {
                 maxDiff = diff;
-                index = (arr[i] > arr[i + 1]) ? i : i + 1; // Store the index of the larger number
+                index = (arr[i] > arr[i + 1]) ? i : i + 1; 
             }
         }
 
