@@ -16,7 +16,7 @@ public class PanCard {
     }
 
     public static boolean validatePAN(String pan) {
-        String regex = "^[A-Z]{3}\\d{4}[A-Z]$"; // 3 uppercase letters, 4 digits, 1 uppercase letter
+        String regex = "^[A-Z]{3}\\d{4}[A-Z]$"; 
         return pan.matches(regex);
     }
 }
