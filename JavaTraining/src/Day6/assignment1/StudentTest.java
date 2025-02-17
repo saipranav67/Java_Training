@@ -10,7 +10,7 @@ public class StudentTest {
 
         System.out.println("Enter the number of students:");
         int n = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         for (int i = 0; i < n; i++) {
             System.out.println("Enter details for student " + (i + 1) + ":");
@@ -23,7 +23,7 @@ public class StudentTest {
 
             System.out.print("Age: ");
             int age = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
 
             System.out.println("Enter Address Details:");
             System.out.print("Street: ");
