@@ -6,7 +6,6 @@ import java.util.*;
 
 public class MovieService {
 
-    // 1. Create a list of movies
     public List<Movie> createMovieSet() {
         List<Movie> movieList = new ArrayList<>();
         movieList.add(new Movie("Inception", "English", LocalDate.of(2010, 7, 16), "Christopher Nolan", "Emma Thomas", 2.8));
@@ -18,17 +17,14 @@ public class MovieService {
         return movieList;
     }
 
-    // 2. Sort movies by language (Comparable)
     public void sortByLanguage(List<Movie> movieList) {
         Collections.sort(movieList);
     }
 
-    // 3. Sort movies by director (Comparator)
     public void sortByDirector(List<Movie> movieList) {
         movieList.sort(Comparator.comparing(Movie::getDirector));
     }
 
-    // 4. Sort movies by duration (Comparator)
     public void sortByDuration(List<Movie> movieList) {
         movieList.sort(Comparator.comparingDouble(Movie::getDuration));
     }
