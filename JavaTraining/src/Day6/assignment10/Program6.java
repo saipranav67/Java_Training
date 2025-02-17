@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Program6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String inputSentence = scanner.nextLine(); // Read the sentence
+        String inputSentence = scanner.nextLine(); 
         scanner.close();
 
         int result = calculateWordSum(inputSentence);
@@ -13,9 +13,9 @@ public class Program6 {
     }
 
     public static int calculateWordSum(String sentence) {
-        String[] words = sentence.split("\\s+"); // Split sentence into words by spaces
+        String[] words = sentence.split("\\s+"); 
         
-        if (words.length < 2) { // Edge case: if there's only one word
+        if (words.length < 2) { 
             return words[0].length();
         }
 
