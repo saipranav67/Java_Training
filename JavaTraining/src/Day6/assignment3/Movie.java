@@ -45,7 +45,7 @@ public class Movie implements Comparable<Movie> {
 
     @Override
     public int compareTo(Movie other) {
-        return this.language.compareTo(other.language); // Sorting by language
+        return this.language.compareTo(other.language); 
     }
 
     @Override
